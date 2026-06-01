@@ -5,7 +5,7 @@ from langchain_core.prompts import PromptTemplate
 import streamlit as st
 import os
 os.environ['GOOGLE_API_KEY']='AIzaSyAyaZeWICvZBmJZmnJmchQIK9nXfQvfieM'
-llm=init_chat_model("google_genai:gemini-2.5-flash-lite")
+llm=init_chat_model("langchain_google_genai:gemini-2.5-flash-lite")
 def generate_restaurant_name_and_item(cuisine):
     prompt_template_name = PromptTemplate(
     input_variables = ["cuisine"],
